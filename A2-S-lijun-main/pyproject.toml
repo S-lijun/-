@@ -12,7 +12,7 @@ dependencies = [
     "ruff>=0.2.1",
 ]
 readme = "README.md"
-requires-python = ">= 3.12"
+requires-python = ">= 3.11"
 
 [build-system]
 requires = ["hatchling"]
@@ -30,6 +30,7 @@ packages = ["src/mec"]
 
 [tool.pytest.ini_options]
 addopts = ["--import-mode=importlib"]
+testpaths = ["tests"]
 
 [tool.ruff]
 extend-include = ["*.ipynb"]
